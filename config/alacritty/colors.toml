@@ -1,0 +1,24 @@
+## Colors configuration
+[colors.primary]
+background = ""
+foreground = ""
+
+[colors.normal]
+black   = ""
+red     = ""
+green   = ""
+yellow  = ""
+blue    = ""
+magenta = ""
+cyan    = ""
+white   = ""
+
+[colors.bright]
+black   = ""
+red     = ""
+green   = ""
+yellow  = ""
+blue    = ""
+magenta = ""
+cyan    = ""
+white   = ""

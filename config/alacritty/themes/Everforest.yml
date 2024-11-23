@@ -1,0 +1,60 @@
+# A green based color scheme designed to be warm and soft
+colors:
+  primary:
+    background: '#2d353b'
+    foreground: '#d3c6aa'
+
+  # Normal colors
+  normal:
+    black:   '#343f44'
+    red:     '#e67e80'
+    green:   '#a7c080'
+    yellow:  '#dbbc7f'
+    blue:    '#7fbbb3'
+    magenta: '#d699b6'
+    cyan:    '#83c092'
+    white:   '#859289'
+
+  # Bright colors
+  bright:
+    black:   '#868d80'
+    red:     '#e67e80'
+    green:   '#a7c080'
+    yellow:  '#dbbc7f'
+    blue:    '#7fbbb3'
+    magenta: '#d699b6'
+    cyan:    '#83c092'
+    white:   '#9da9a0'
+
+  # Selection colors
+  selection:
+    text: '#9da9a0'
+    background: '#505a60'
+
+  # Cursor colors
+  cursor:
+    text: '#343f44'
+    cursor: '#d3c6aa'
+
+  # ANSI escape code colors
+  ansi:
+    black:   '#343f44'
+    red:     '#e67e80'
+    green:   '#a7c080'
+    yellow:  '#dbbc7f'
+    blue:    '#7fbbb3'
+    magenta: '#d699b6'
+    cyan:    '#83c092'
+    white:   '#859289'
+
+  # Bright ANSI escape code colors
+  brights:
+    black:   '#868d80'
+    red:     '#e67e80'
+    green:   '#a7c080'
+    yellow:  '#dbbc7f'
+    blue:    '#7fbbb3'
+    magenta: '#d699b6'
+    cyan:    '#83c092'
+    white:   '#9da9a0'
+
