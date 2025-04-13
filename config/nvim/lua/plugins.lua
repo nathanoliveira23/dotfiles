@@ -11,7 +11,14 @@ require("rose-pine").setup({
     },
 })
 
-vim.cmd("colorscheme rose-pine")
+--vim.cmd("colorscheme rose-pine")
+vim.cmd("colorscheme nord")
+--vim.cmd.colorscheme('nordic')
+
+-- Ensure termguicolors is enabled if not already
+vim.opt.termguicolors = true
+
+require('nvim-highlight-colors').setup({})
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
@@ -66,5 +73,13 @@ return require('packer').startup(function(use)
 
     use "1612492/github.vim"
 
+    use 'brenoprata10/nvim-highlight-colors'
+
     use "rose-pine/neovim"
+
+    use "gbprod/nord.nvim"
+
+    use 'AlexvZyl/nordic.nvim'
+
+    use 'mfussenegger/nvim-jdtls' -- plugin com todas as features do jdtls
 end)

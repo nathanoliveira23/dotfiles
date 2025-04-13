@@ -23,10 +23,17 @@ font pango:monospace 8
 new_window 1pixel
 
 # Border color
-client.focused          #ffffff #285577 #ffffff #ffffff   #555555
+#client.focused          #ffffff #285577 #ffffff #ffffff   #555555
+client.focused          #D8DEE9 #5E81AC #D8DEE9 #D8DEE9   #4C566A
+
+# Borda para janelas em modo tile (normal)
+default_border pixel 3
+
+# Borda para janelas flutuantes
+default_floating_border pixel 3
 
 # Window gap
-gaps inner 3px
+gaps inner 6px
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -49,13 +56,14 @@ exec --no-startup-id nm-applet
 
 #exec_always --no-startup-id /home/nathan/scripts/setkl.sh
 
-exec_always --no-startup-id /home/nathan/.config/polybar/variants/launch.sh
+#exec_always --no-startup-id /home/nathan/.config/polybar/variants/launch.sh
+exec_always --no-startup-id /home/nathan/.config/polybar/custom/launch.sh
 
 # Display resolution
 #exec_always --no-startup-id xrandr --output VGA-0 --mode 1368x768 --rate 60.00
 
 # Compositor
-exec_always --no-startup-id picom --config ~/.config/picom/picom.conf &
+exec_always --no-startup-id picom --experimental-backends --config ~/.config/picom/picom.conf &
 
 # Wallpaper
 exec_always --no-startup-id nitrogen --restore
@@ -79,7 +87,8 @@ bindsym $mod+Return exec alacritty
 
 # Start ranger filemanager
 #bindsym $mod+f exec kitty ranger
-bindsym $mod+f exec alacritty -e ranger
+#bindsym $mod+f exec alacritty -e ranger
+bindsym $mod+f exec nemo
 
 # start default browser
 bindsym $mod+b exec firefox-esr
@@ -97,7 +106,7 @@ bindsym $mod+o exec --no-startup-id python3 ~/scripts/search/search.py
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
 #bindsym $mod+d exec --no-startup-id rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/rofi/custom/config.rasi
-bindsym $mod+d exec --no-startup-id ~/.config/rofi/launchers/type-2/launcher.sh
+bindsym $mod+m exec --no-startup-id ~/.config/rofi/launchers/type-2/launcher.sh
 
 # Screenshot
 bindsym $mod+Shift+p exec --no-startup-id ~/.config/rofi/applets/bin/screenshot.sh
@@ -121,9 +130,9 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
+bindsym $mod+Shift+g move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
 bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
